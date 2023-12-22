@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bronchoscopy_reports",
+  "info": {
+    "singularName": "bronchoscopy-report",
+    "pluralName": "bronchoscopy-reports",
+    "displayName": "Bronchoscopy Report"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "generalAppearance": {
+      "type": "text"
+    },
+    "mucousMembrane": {
+      "type": "string"
+    },
+    "degreeOfStenosis": {
+      "type": "string"
+    },
+    "neoplasm": {
+      "type": "text"
+    },
+    "contentAnalysis": {
+      "type": "string"
+    },
+    "bronchoscopyImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "bronchoscopyVideo": {
+      "allowedTypes": [
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

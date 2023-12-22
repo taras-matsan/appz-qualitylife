@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "below_erythrocyte_sedimentation_rates",
+  "info": {
+    "singularName": "below-erythrocyte-sedimentation-rate",
+    "pluralName": "below-erythrocyte-sedimentation-rates",
+    "displayName": "/",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "color": {
+      "type": "string"
+    },
+    "odor": {
+      "type": "string"
+    },
+    "reaction": {
+      "type": "string"
+    },
+    "consistency": {
+      "type": "string"
+    },
+    "character": {
+      "type": "string"
+    },
+    "alveolarMacrophageUpperCount": {
+      "type": "integer"
+    },
+    "alveolarMacrophageBelowCount": {
+      "type": "integer"
+    },
+    "xanthomatousCellUpperCount": {
+      "type": "integer"
+    },
+    "xanthomatousCellBelowCount": {
+      "type": "integer"
+    },
+    "epithelialCellUpperCount": {
+      "type": "integer"
+    },
+    "epithelialCellBelowCount": {
+      "type": "integer"
+    },
+    "leukocyteUpperCount": {
+      "type": "integer"
+    },
+    "leukocyteBelowCount": {
+      "type": "integer"
+    },
+    "kurtzmanSpiralData": {
+      "type": "text"
+    },
+    "cholesterolCrystalsData": {
+      "type": "text"
+    },
+    "hematoxylinCrystalsData": {
+      "type": "text"
+    },
+    "atypicalCellData": {
+      "type": "text"
+    },
+    "bacterialFloraData": {
+      "type": "text"
+    }
+  }
+}

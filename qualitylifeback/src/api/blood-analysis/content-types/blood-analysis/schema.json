@@ -1,0 +1,93 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blood_analyses",
+  "info": {
+    "singularName": "blood-analysis",
+    "pluralName": "blood-analyses",
+    "displayName": "Blood Analysis"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "upperLeukocyteCount": {
+      "type": "float"
+    },
+    "belowLeukocyteCount": {
+      "type": "float"
+    },
+    "upperHemoglobinLevel": {
+      "type": "float"
+    },
+    "belowHemoglobinLevel": {
+      "type": "float"
+    },
+    "upperErythrocyteCount": {
+      "type": "float"
+    },
+    "belowErythrocyteCount": {
+      "type": "float"
+    },
+    "upperHematocritLevel": {
+      "type": "float"
+    },
+    "belowHematocritLevel": {
+      "type": "float"
+    },
+    "upperMeanCorpuscularVolume": {
+      "type": "float"
+    },
+    "belowMeanCorpuscularVolume": {
+      "type": "float"
+    },
+    "upperMeanCorpuscularHemoglobin": {
+      "type": "float"
+    },
+    "belowMeanCorpuscularHemoglobin": {
+      "type": "float"
+    },
+    "upperThrombocrit": {
+      "type": "float"
+    },
+    "belowThrombocrit": {
+      "type": "float"
+    },
+    "plateletDistributionWidthUpper": {
+      "type": "float"
+    },
+    "plateletDistributionWidthBelow": {
+      "type": "float"
+    },
+    "upperPlateletCount": {
+      "type": "float"
+    },
+    "belowPlateletCount": {
+      "type": "float"
+    },
+    "upperMeanPlateletVolume": {
+      "type": "float"
+    },
+    "belowMeanPlateletVolume": {
+      "type": "float"
+    },
+    "upperErythrocyteDistributionWidth": {
+      "type": "float"
+    },
+    "belowErythrocyteDistributionWidth": {
+      "type": "float"
+    },
+    "upperLargePlateletRatio": {
+      "type": "float"
+    },
+    "belowLargePlateletRatio": {
+      "type": "float"
+    },
+    "upperErythrocyteSedimentationRate": {
+      "type": "float"
+    },
+    "belowErythrocyteSedimentationRate": {
+      "type": "float"
+    }
+  }
+}

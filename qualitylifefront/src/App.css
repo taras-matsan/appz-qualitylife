@@ -1,0 +1,330 @@
+@font-face {
+    font-family: "Lato-Regular";
+    src: local("Lato-Regular"),
+    url("../public/Lato-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+.bronch{
+    grid-column: span 2;
+}
+
+.general{
+    grid-column: span 2;
+}
+
+.analysis-container {
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
+    grid-gap: 30px 0;
+    padding: 40px;
+    grid-column: span 6;
+}
+
+.analysis-button-container {
+    display: flex;
+    grid-column: span 2;
+}
+
+.analysis-button {
+    height: 50px;
+    max-height: 80px;
+    width: 100%;
+    justify-self: center;
+    align-self: flex-end;
+    border: none;
+    border-radius: 10px;
+    background-color: #EAE7F6;
+    font-family: Lato-Regular, serif;
+    font-size: 1.25rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.analysis-button:hover{
+    background-color: #e9e4fc;
+}
+
+.analysis {
+    grid-template-columns: repeat(6, 1fr);
+    background-color: #FACCED;
+}
+
+.analysis-form {
+    background-color: #F3EAF0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    align-self: center;
+}
+
+.analysis-form-header {
+    font-family: "Lato-Regular", serif;
+    background-color: #52424D;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 8px 8px 0 0;
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 0;
+}
+
+.test-items {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    border: 1px solid #F3EAF0;
+    border-right: none;
+}
+
+.test-item {
+    display: contents;
+}
+
+.test-item label,
+.test-item input {
+
+    border-bottom: 1px solid #79797b;
+}
+
+.test-item input {
+    border: none;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.test-item input:focus {
+    outline: none;
+}
+
+.test-item label {
+    font-family: Lato-Regular, serif;
+    background-color: #EAE7F6;
+    text-align: left;
+    border-right: 1px solid #EAE7F6;
+}
+
+.test-item:last-child label,
+.test-item:last-child input {
+    border-bottom: none;
+}
+
+.list-container {
+    font-family: Lato-Regular, serif;
+    width: 50%;
+    margin: auto;
+    overflow-x: auto;
+}
+
+.patient-list {
+    list-style: none;
+    padding: 0;
+}
+
+.list-item {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.list-item:hover {
+    background-color: #f5f5f5;
+}
+
+.patient-name {
+    margin-right: 10px;
+}
+
+.patient-surname {
+    margin-right: 10px;
+}
+
+.patient-midecalid {
+    font-style: italic;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0;
+}
+
+.analysis-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.analysis-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+}
+
+.analysis-image {
+    width: 100%;
+    height: auto;
+}
+
+.analysis-title {
+    background-color: #eee; /* Light grey background for the title */
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.sidebar {
+    background: #f8f8f8;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px; /* Or your preferred width */
+}
+
+.patient-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.patient-avatar {
+    background: #ccc; /* Placeholder for avatar image */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.patient-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.last-visits h2 {
+    margin-bottom: 10px;
+}
+
+.visit {
+    background: #fff;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.view-all {
+    color: #007bff;
+    text-align: right;
+    cursor: pointer;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px; /* Adjust the max width as per your layout requirements */
+    margin: auto;
+}
+
+.analysis-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: calc(100% - 320px); /* Adjust the width to account for the sidebar */
+}
+
+.analysis-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+}
+
+.analysis-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* This will ensure the image covers the area properly */
+}
+
+.analysis-title {
+    background-color: #eee;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.sidebar {
+    background: #f8f8f8;
+    border-radius: 10px;
+    padding: 20px;
+    width: 320px; /* Increased width of the sidebar */
+    flex-shrink: 0; /* Prevent the sidebar from shrinking */
+    margin-left: auto; /* Push the sidebar to the right */
+}
+
+.patient-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.homebutton {
+    height: 60px;
+    border-radius: 15px;
+    border: none;
+    background-color: #fec9feab;
+    padding: 10px 20px; /* Add some horizontal padding */
+    color: #333; /* Darker text color for contrast */
+    font-size: 16px; /* Set font size */
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 100ms ease-in-out, box-shadow 100ms ease-in-out, background-color 150ms ease-in-out; /* Smooth transition for multiple properties */
+    outline: none; /* Remove the outline to avoid a boxy look when clicked */
+    margin-bottom: 20px; /* Add margin to separate buttons */
+    cursor: pointer; /* Cursor pointer to indicate it's clickable */
+    user-select: none; /* Prevent text selection */
+}
+
+.homebutton:hover, .homebutton:focus {
+    transform: scale(1.05); /* Slightly enlarge the button */
+    background-color: #fca9fc; /* Change color on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Larger shadow for depth */
+}
+
+/* Optional: Add a focus style for accessibility */
+.homebutton:focus {
+    outline: 2px solid #fca9fc;
+    outline-offset: 2px;
+}
+
+/* Optional: Add an active style */
+.homebutton:active {
+    transform: scale(0.98); /* Slightly shrink the button when clicked */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Smaller shadow to give a pressed effect */
+}
+
+.test-item input[type='file'] {
+    display: none;
+}
+
+.file-input-container {
+    cursor: pointer;
+    background-color: #f3f3f3;
+    border: 1px solid #d1d1d1;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.file-name {
+    margin-left: 10px;
+    font-style: italic;
+}

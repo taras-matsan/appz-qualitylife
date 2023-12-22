@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "medical_examinations",
+  "info": {
+    "singularName": "medical-examination",
+    "pluralName": "medical-examinations",
+    "displayName": "General Analysis",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "symptoms": {
+      "type": "text"
+    },
+    "prognosis": {
+      "type": "text"
+    },
+    "recommendations": {
+      "type": "text"
+    },
+    "blood_analysis": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::blood-analysis.blood-analysis"
+    },
+    "sputum_analysis": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::below-erythrocyte-sedimentation-rate.below-erythrocyte-sedimentation-rate"
+    },
+    "bronchoscopy_report": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::bronchoscopy-report.bronchoscopy-report"
+    }
+  }
+}
